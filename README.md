@@ -17,6 +17,7 @@
 - HTML
 - Typescript
 - React
+- SASS
 
 ---
 
