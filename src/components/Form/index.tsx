@@ -7,7 +7,7 @@ class Form extends React.Component {
     return (
       <form className="newTask">
         <div>
-        <h1>Formulário</h1>
+        <h1>Form</h1>
         <div className="inputContainer">
           <label htmlFor="task">
             Type your daily task
