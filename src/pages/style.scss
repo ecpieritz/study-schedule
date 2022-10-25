@@ -1,12 +1,7 @@
 .AppStyle {
-  display: grid;
-  grid-template-rows: min-content min-content auto;
-  grid-template-areas: 
-  "new-task"
-  "timer"
-  "tasks"
-  ;
-  row-gap: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
   min-width: 320px;
   min-height: calc(100vh - 32px);
   width: 100%;
@@ -14,17 +9,12 @@
   box-sizing: border-box;
   border-radius: 10px;
   background-color: #000f3a;
+  justify-content: center;
+  align-content: center;
+  padding: 64px;
 
-  @media screen and (min-width:1280px)  {
-    grid-template-areas: 
-    "new-task tasks"
-    "timer tasks"
-    ;
-    column-gap: 64px;
-    grid-template-rows: min-content min-content;
-    grid-template-columns: 750px 300px;
-    justify-content: center;
-    align-content: center;
-    padding: 64px;
+  @media screen and (max-width: 960px)  {
+    flex-direction: column;
+    gap: 40px;
   }
 }
